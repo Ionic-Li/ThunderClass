@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1082
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ThunderClass", "ThunderClass\ThunderClass.vcxproj", "{03D6D173-9F44-4962-9179-7352BBAA4381}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03D6D173-9F44-4962-9179-7352BBAA4381}.Debug|x64.ActiveCfg = Debug|x64
+		{03D6D173-9F44-4962-9179-7352BBAA4381}.Debug|x64.Build.0 = Debug|x64
+		{03D6D173-9F44-4962-9179-7352BBAA4381}.Release|x64.ActiveCfg = Release|x64
+		{03D6D173-9F44-4962-9179-7352BBAA4381}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD974579-0830-4827-9B7D-11ED0DEA7E46}
+	EndGlobalSection
+EndGlobal
