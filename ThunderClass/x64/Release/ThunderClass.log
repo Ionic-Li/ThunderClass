@@ -1,0 +1,21 @@
+﻿  uic AddUserWindow.ui
+  uic AdminWindow.ui
+  uic ChangeUserWindow.ui
+  uic LoginWindow.ui
+  moc AddUserWindow.h
+  moc ChangeUserWindow.h
+  moc AdminWindow.h
+  moc AdminProcess.h
+  moc LoginWindow.h
+  AddUserWindow.cpp
+  AdminWindow.cpp
+  ChangeUserWindow.cpp
+  Connection.cpp
+  LoginWindow.cpp
+  main.cpp
+  moc_AddUserWindow.cpp
+  moc_AdminProcess.cpp
+  moc_AdminWindow.cpp
+  moc_ChangeUserWindow.cpp
+  moc_LoginWindow.cpp
+  ThunderClass.vcxproj -> D:\1李永健\大学\作业\大一下作业\C++\雷课堂\ThunderClass\x64\Release\ThunderClass.exe

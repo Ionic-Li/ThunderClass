@@ -1,0 +1,42 @@
+﻿  moc StudentWindow.h
+  moc studentprocess.h
+  moc TeacherWindow.h
+  moc teacherprocess.h
+  AddUserWindow.cpp
+  AdminProcess.cpp
+  AdminWindow.cpp
+  Answer.cpp
+  AnswerResWindow.cpp
+  ChangeUserWindow.cpp
+  Connection.cpp
+  LoginProcess.cpp
+  LoginWindow.cpp
+  Message.cpp
+  QuestionWindow.cpp
+  Server.cpp
+  StudentDataWindow.cpp
+  StudentWindow.cpp
+  TeacherWindow.cpp
+  TimeCount.cpp
+  admin.cpp
+  audio.cpp
+  client.cpp
+  main.cpp
+  student.cpp
+  studentprocess.cpp
+  teacher.cpp
+  teacherprocess.cpp
+  user.cpp
+  moc_AddUserWindow.cpp
+  moc_AdminProcess.cpp
+  moc_AdminWindow.cpp
+  moc_AnswerResWindow.cpp
+  moc_ChangeUserWindow.cpp
+  moc_LoginWindow.cpp
+  moc_QuestionWindow.cpp
+  moc_StudentDataWindow.cpp
+  moc_StudentWindow.cpp
+  moc_TeacherWindow.cpp
+  moc_studentprocess.cpp
+  moc_teacherprocess.cpp
+  ThunderClass.vcxproj -> D:\1李永健\大学\作业\大一下作业\C++\雷课堂\ThunderClass\x64\Debug\ThunderClass.exe

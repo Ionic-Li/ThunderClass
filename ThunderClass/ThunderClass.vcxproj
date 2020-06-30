@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{03D6D173-9F44-4962-9179-7352BBAA4381}</ProjectGuid>
+    <Keyword>QtVS_v302</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;$(IncludePath)</IncludePath>
+    <ReferencePath>D:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>Qt 5.14.2</QtInstall>
+    <QtModules>core;gui;network;websockets;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>Qt 5.14.2</QtInstall>
+    <QtModules>core;gui;websockets;widgets</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AddUserWindow.cpp" />
+    <ClCompile Include="admin.cpp" />
+    <ClCompile Include="AdminProcess.cpp" />
+    <ClCompile Include="AdminWindow.cpp" />
+    <ClCompile Include="Answer.cpp" />
+    <ClCompile Include="AnswerResWindow.cpp" />
+    <ClCompile Include="audio.cpp" />
+    <ClCompile Include="audioframe.cpp" />
+    <ClCompile Include="ChangeUserWindow.cpp" />
+    <ClCompile Include="client.cpp" />
+    <ClCompile Include="Connection.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="log.cpp" />
+    <ClCompile Include="LoginProcess.cpp" />
+    <ClCompile Include="LoginWindow.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Message.cpp" />
+    <ClCompile Include="Pixel.cpp" />
+    <ClCompile Include="QStrAndStr.cpp" />
+    <ClCompile Include="Question.cpp" />
+    <ClCompile Include="QuestionWindow.cpp" />
+    <ClCompile Include="Server.cpp" />
+    <ClCompile Include="student.cpp" />
+    <ClCompile Include="StudentDataWindow.cpp" />
+    <ClCompile Include="studentprocess.cpp" />
+    <ClCompile Include="StudentWindow.cpp" />
+    <ClCompile Include="teacher.cpp" />
+    <ClCompile Include="teacherprocess.cpp" />
+    <ClCompile Include="TeacherWindow.cpp" />
+    <ClCompile Include="TimeCount.cpp" />
+    <ClCompile Include="user.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="AddUserWindow.ui" />
+    <QtUic Include="AdminWindow.ui" />
+    <QtUic Include="AnswerResWindow.ui" />
+    <QtUic Include="ChangeUserWindow.ui" />
+    <QtUic Include="LoginWindow.ui" />
+    <QtUic Include="QuestionWindow.ui" />
+    <QtUic Include="StudentDataWindow.ui" />
+    <QtUic Include="StudentWindow.ui" />
+    <QtUic Include="TeacherWindow.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="AddUserWindow.h" />
+    <QtMoc Include="ChangeUserWindow.h" />
+    <ClInclude Include="admin.h" />
+    <QtMoc Include="AdminWindow.h" />
+    <ClInclude Include="Answer.h" />
+    <QtMoc Include="AnswerResWindow.h" />
+    <ClInclude Include="audio.h" />
+    <ClInclude Include="audioframe.h" />
+    <ClInclude Include="client.h" />
+    <ClInclude Include="Connection.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="MessageType.h" />
+    <ClInclude Include="Pixel.h" />
+    <ClInclude Include="QStrAndStr.h" />
+    <ClInclude Include="Question.h" />
+    <QtMoc Include="QuestionWindow.h" />
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="student.h" />
+    <QtMoc Include="StudentWindow.h" />
+    <QtMoc Include="studentprocess.h" />
+    <QtMoc Include="StudentDataWindow.h" />
+    <ClInclude Include="teacher.h" />
+    <QtMoc Include="TeacherWindow.h" />
+    <QtMoc Include="teacherprocess.h" />
+    <ClInclude Include="TimeCount.h" />
+    <ClInclude Include="user.h" />
+    <QtMoc Include="AdminProcess.h" />
+    <ClInclude Include="LoginProcess.h" />
+    <QtMoc Include="LoginWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ThunderClass.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

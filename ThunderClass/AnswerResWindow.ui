@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AnswerResWindow</class>
+ <widget class="QDialog" name="AnswerResWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>618</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>618</width>
+    <height>510</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>AnswerResWindow</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="0,4,0,1">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>学生作答情况</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableView" name="StuResView"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>选项选择情况</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableView" name="AnsResView"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
